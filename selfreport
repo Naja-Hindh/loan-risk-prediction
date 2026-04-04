@@ -1,0 +1,9 @@
+selcted a real world data set from kaggle which has lending club load data.
+this data set include data dating from 2007 to 2015.
+but this data set had ~800,000+ records and 70 columns.
+this was was a very huge amount of data for my system to process.
+So i decided to use 20000 records but then again github had a file limit of 25MB.
+thus decided to go further with 10000 records of data.
+while accessing the data for cleaning multiple data types were detected in one and it was thowing an error.
+So had to use low_memory=False.
+changed interest rate and term as well to numeric data types and removed their suffix(replaced).
