@@ -30,11 +30,17 @@ https://www.kaggle.com/datasets/adarshsng/lending-club-loan-data-csv
 ## 📂 Project Structure
 Loan-Risk-Prediction/
 │
+
 ├── data/ # Dataset (sample)
+
 ├── docs/ # Data dictionary
+
 ├── scripts/ # Python scripts
+
 ├── app/ # Web app (Streamlit)
+
 ├── report/ # Final report
+
 ├── progress.md # Project progress log
 
 
