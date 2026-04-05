@@ -19,3 +19,13 @@ sns.scatterplot(x='annual_inc', y='loan_amnt', hue='loan_status', data=df)
 plt.title("Income vs Loan Amount (Default Analysis)")
 plt.savefig("report/income_vs_loan.png")
 plt.show()
+
+
+#Higher interest rates are associated with increased default probability,
+#indicating higher financial burden.
+
+
+sns.boxplot(x='loan_status', y='int_rate', data=df)
+plt.title("Interest Rate vs Loan Status")
+plt.savefig("report/interest_vs_default.png")
+plt.show()
