@@ -1,10 +1,11 @@
-#Higher income borrowers tend to repay loans more successfully,
-#while lower income groups show higher default risk.
+
 
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+#Higher income borrowers tend to repay loans more successfully,
+#while lower income groups show higher default risk.
 
 df = pd.read_csv("data/sample_loan.csv", low_memory=False)
 
@@ -29,3 +30,12 @@ sns.boxplot(x='loan_status', y='int_rate', data=df)
 plt.title("Interest Rate vs Loan Status")
 plt.savefig("report/interest_vs_default.png")
 plt.show()
+
+#Larger loan amounts slightly increase the risk of default
+#due to higher repayment pressure.
+
+sns.boxplot(x='loan_status', y='loan_amnt', data=df)
+plt.title("Loan Amount vs Default")
+plt.savefig("report/loan_vs_default.png")
+plt.show()
+
