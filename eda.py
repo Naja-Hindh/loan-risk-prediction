@@ -39,3 +39,13 @@ plt.title("Loan Amount vs Default")
 plt.savefig("report/loan_vs_default.png")
 plt.show()
 
+#Debt-to-income ratio, interest rate, and loan amount
+#show strong influence on loan default risk.
+
+numeric_df = df.select_dtypes(include=['number'])
+
+plt.figure(figsize=(10,6))
+sns.heatmap(numeric_df.corr(), annot=True, cmap='coolwarm')
+plt.title("Correlation Matrix")
+plt.savefig("report/correlation.png")
+plt.show()
